@@ -42,7 +42,7 @@ export const Packages = () => {
 
   const handleBooking = (pkgName: string, pkgPrice: any) => {
     const message = `Hello Hirusha Sanjana! 👋%0A%0AI am interested in the *${pkgName}* Premium Package.%0AInvestment: *Rs. ${pkgPrice.toLocaleString()}*%0A%0ACan we discuss the dates?`;
-    const whatsappUrl = `https://wa.me/${761151536}?text=${message}`;
+    const whatsappUrl = `https://wa.me/${+94 78 918 5026}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
