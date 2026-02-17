@@ -19,7 +19,7 @@ export const Packages = () => {
   const [packages, setPackages] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const WHATSAPP_NUMBER = "94771234567"; 
+  const WHATSAPP_NUMBER = "94 78 918 5026"; 
 
   useEffect(() => {
     const fetchPackages = async () => {
@@ -42,7 +42,7 @@ export const Packages = () => {
 
   const handleBooking = (pkgName: string, pkgPrice: any) => {
     const message = `Hello Hirusha Sanjana! 👋%0A%0AI am interested in the *${pkgName}* Premium Package.%0AInvestment: *Rs. ${pkgPrice.toLocaleString()}*%0A%0ACan we discuss the dates?`;
-    const whatsappUrl = `https://wa.me/${+94 78 918 5026}?text=${message}`;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
