@@ -19,7 +19,7 @@ export const Packages = () => {
   const [packages, setPackages] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const WHATSAPP_NUMBER = "94 78 918 5026"; 
+  const whatsappUrl = `https://wa.me/94789185026?text=${message}`;
 
   useEffect(() => {
     const fetchPackages = async () => {
